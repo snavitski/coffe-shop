@@ -1,0 +1,15 @@
+//normalize default styles
+@import "partials/normalize.scss";
+
+//bootstrap
+@import "bootstrap/functions.scss";
+@import "bootstrap/variables.scss";
+@import "bootstrap/utilities.scss";
+@import "bootstrap/mixins.scss";
+@import "bootstrap/grid.scss";
+@import "bootstrap/images.scss";
+
+//partials
+@import "partials/settings.scss";
+@import "partials/header.scss";
+@import "partials/global.scss";
