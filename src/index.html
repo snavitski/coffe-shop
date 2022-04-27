@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Coffee Shop</title>
+</head>
+
+<body>
+	<header class="header">
+
+		<div class="header-wrapper container">
+			<div class="row logo">
+				<h4 class="logo-title">EL TIGRE</h4>
+				<p class="logo-subtitle col-2"> VENEZUELA COFFEE BEANS</p>
+				<ul class="main-nav col-10">
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#products">PRODUCTS</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="page-title">
+				<h1 class="higher">HOME OF</h1>
+				<h1 class="lower">ORIGINAL TASTES</h1>
+				<div>
+					<h4 class="discover">DISCOVER</h4>
+					<i class="far fa-arrow-alt-circle-down"></i>
+				</div>
+			</div>
+		</div>
+		<div class="background-image">
+			<img class="img-fluid" src="./images/background.png" alt="Coffee">
+		</div>
+	</header>
+	<div id="pages" class="start">
+		<section id="home">
+			<div class="home-wrapper container">
+				<div class="section-title">
+					<h2 class="home-products">PRODUCTS</h2>
+					<p class="section-title-line col-6"></p>
+				</div>
+				<div class="products-list-home"></div>
+				<script id="template-home-widget" type="text/x-handlebars-template">
+        <div class="product-widget container">
+          <div class="skill-right">
+            <div class="product-image">
+                {{{ images }}}
+            </div>
+            <div class="description">
+              <h3 class="name">{{{ number }}} {{{ name }}}</h3>
+              <div class="row">
+                <p class="border-top col-2"></p>
+                <span class="col-8 details">{{{ description }}}</span>
+              </div>
+              <div class="row">
+                <div class="col-sm-5 qualities">
+                  <p>roasting: <span>{{{ roasting }}}</span></p>
+                  <p>intensity: <span>{{{ intensity }}}</span></p>
+                </div>
+                <div class="col-sm-5 icon">
+                  {{{ most-popular }}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+				<article class="article-about active" id="article-about">
+					<div class="home-widget">
+						<div class="section-title-about container">
+							<h2>ABOUT US</h2>
+							<p class="section-title-line col-6 about-line"></p>
+						</div>
+						<img class="img-fluid" src="images/about-us.jpg" alt="about us">
+						<div class="text">
+							<p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new,
+								something original.<br><br> Our coffees reflect us – young, wild and free. We are on the journey of new
+								tastes...</p>
+							<h3 class="join">Join us!</h3>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section id="products">
+			<div class="product-wrapper container">
+				<div class="section-title">
+					<h2>PRODUCTS</h2>
+					<p class="section-title-line col-6"></p>
+				</div>
+				<div class="products-list"></div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="contact-wrapper container">
+				<article class="article-contact" id="article-contact">
+					<div class="contact-widget">
+						<div class="section-title">
+							<h2>CONTACT US</h2>
+							<p class="section-title-line col-6"></p>
+						</div>
+						<form>
+							<div class="form">
+								<label for="filed-name">NAME</label>
+								<input type="text">
+							</div>
+							<div class="form">
+								<label for="filed-name">TITLE</label>
+								<input type="text">
+							</div>
+							<div class="form">
+								<label for="field-message" class="field-message">MESSAGE</label>
+								<textarea></textarea>
+							</div>
+							<div class="form">
+								<button type="submit" class="btn">SUBMIT</button>
+							</div>
+						</form>
+					</div>
+				</article>
+			</div>
+		</section>
+	</div>
+	<script id="template-product-widget" type="text/x-handlebars-template">
+  <div class="product-widget container">
+    <div class="skill-right">
+      <div class="product-image">
+          {{{ images }}}
+      </div>
+      <div class="description">
+        <h3 class="name">{{{ number }}} {{{ name }}}</h3>
+        <div class="row">
+          <p class="border-top col-2"></p>
+          <span class="col-8 details">{{{ description }}}</span>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 qualities">
+            <p>roasting: <span>{{{ roasting }}}</span></p>
+            <p>intensity: <span>{{{ intensity }}}</span></p>
+          </div>
+          <div class="col-sm-5 icon">
+            {{{ most-popular }}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+	<footer>
+		<p> © 2021 EL TIGRE inc.</p>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+	<script src="js/app.js" type="module"></script>
+</body>
+
+</html>
