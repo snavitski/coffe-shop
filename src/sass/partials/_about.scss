@@ -1,0 +1,29 @@
+.home-widget {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+
+  img {
+    filter: brightness(55%);
+    width: 90%;
+    position: absolute;
+  }
+
+  .text {
+    position: relative;
+    color: $color-light;
+    margin-top: 150px;
+    font-weight: $font-weight-regular;
+    font-style: italic;
+    font-size: 35px;
+    text-align: left;
+    max-width: 700px;
+    width: 70%;
+    margin-top: 22%;
+    margin-right: 300px;
+  }
+}
+
+.join{
+  text-align: right;
+}
