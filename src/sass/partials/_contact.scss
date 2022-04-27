@@ -1,33 +1,33 @@
 .form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	text-align: center;
-	font-weight: $font-weight-bold;
-	color: $color-dark;
-	letter-spacing: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  color: $color-dark;
+  letter-spacing: 7px;
 }
 
 input {
-	width: 400px;
-	height: 50px;
-	margin-left: 500px;
-	border: 2px solid $color-dark;
+  width: 400px;
+  height: 50px;
+  margin-left: 500px;
+  border: 2px solid $color-dark;
 }
 
 textarea {
-	border: 2px solid $color-dark;
-	width: 29%;
-	height: 200px;
-	margin-left: 500px;
+  border: 2px solid $color-dark;
+  width: 29%;
+  height: 200px;
+  margin-left: 500px;
 }
 
 .btn {
-	background-color: $color-gold;
-	color: $color-light;
-	width: 200px;
-	height: 50px;
-	margin-left: 600px;
-	margin-top: 2%;
+  background-color: $color-gold;
+  color: $color-light;
+  width: 200px;
+  height: 50px;
+  margin-left: 600px;
+  margin-top: 2%;
 }

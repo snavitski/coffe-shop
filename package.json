@@ -48,7 +48,9 @@
     },
     "dependencies": {
         "eslintrc": "^1.0.6",
+        "http-sever": "14.1.0",
         "json-server": "^0.16.3",
-        "sass": "^1.35.1"
+        "sass": "^1.35.1",
+        "server": "^1.0.37"
     }
 }

@@ -13,7 +13,7 @@ export const select = {
     productListHome: '.products-list-home',
   },
   nav: {
-    links: 'main-nav a',
+    links: '.main-nav a',
   },
   product: {
     productsList: '.products-list',

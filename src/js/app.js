@@ -12,16 +12,16 @@ const app = {
     // console.log(thisApp.navLinks);
     const idFromHash = window.location.hash.replace('#/', '');
 
-    let pageMatchinHash = thisApp.pages[0].id;
+    let pageMatchingHash = thisApp.pages[0].id;
 
     for (let page of thisApp.pages) {
       if (page.id === idFromHash) {
-        pageMatchinHash = page.id;
+        pageMatchingHash = page.id;
         break;
       }
     }
 
-    thisApp.activatePage(pageMatchinHash);
+    thisApp.activatePage(pageMatchingHash);
 
     for (let link of thisApp.navLinks) {
       link.addEventListener('click', function (event) {
@@ -45,7 +45,7 @@ const app = {
     }
 
     for (let link of thisApp.navLinks) {
-      link.classList.add(
+      link.classList.toggle(
         classNames.nav.active,
         link.getAttribute('href') == '#' + pageId
       );

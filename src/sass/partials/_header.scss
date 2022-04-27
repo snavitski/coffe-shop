@@ -1,125 +1,136 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 .background-image {
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	filter: brightness(55%);
-	// visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  filter: brightness(55%);
+  // visibility: hidden;
 }
 
 header {
-	//background-image: url("../../images/background.png");
-	background-color: $color-light;
-	position: relative;
+  //background-image: url("../../images/background.png");
+  background-color: $color-light;
+  position: relative;
 }
 
 .header-wrapper {
-	z-index: 9;
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 .logo {
-	display: inline;
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: 1;
+  display: inline;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
+
 .main-nav {
-	margin-top: -35px;
-	padding-right: 0;
-	z-index: 9;
+  margin-top: -35px;
+  padding-right: 0;
+  z-index: 999;
 }
 
 ul {
-	text-align: right;
-	margin-top: -40px;
-	font-size: 16px;
-	font-weight: $font-weight-regular;
-	word-spacing: 5px;
-	letter-spacing: 2px;
-	li {
-		display: inline-block;
-		margin-top: -60px;
-		a {
-			text-decoration: none;
-			color: $color-gold;
-		}
-	}
-}
-.logo-title {
-	font-weight: $font-weight-black;
-	color: $color-light;
-	text-align: left;
-	margin-bottom: auto;
-	word-spacing: 5px;
-	letter-spacing: 2px;
-	padding-left: 9%;
-	padding-top: 10px;
-	font-size: 20px;
-}
-.logo-subtitle {
-	margin-top: 0;
-	font-size: 10px;
-	font-weight: $font-weight-regular;
-	word-spacing: 5px;
-	letter-spacing: 2px;
-	padding-left: 9%;
-	display: inline;
-	color: $color-light;
-}
-.page-title {
-	color: $color-gold;
-	position: absolute;
-	left: 0;
-	right: 0;
-	padding-top: 200px;
-	text-align: center;
-	word-spacing: 7px;
-	letter-spacing: 5px;
+  text-align: right;
+  margin-top: -40px;
+  font-size: 16px;
+  font-weight: $font-weight-regular;
+  word-spacing: 5px;
+  letter-spacing: 2px;
 
-	.higher {
-		text-align: center;
-		margin-bottom: -10px;
-		font-size: 55px;
-		padding-right: 25%;
-		z-index: 1;
-	}
-	.lower {
-		text-align: center;
-		margin: 0;
-		font-size: 55px;
-	}
-	:after {
-		position: absolute;
-		content: "";
-		bottom: 58px;
-		left: 50%;
-		width: 200px;
-		height: 2px;
-		transform: translateX(-50%);
-		background: $color-gold;
-		margin-bottom: 25%;
-	}
+  li {
+    display: inline-block;
+    margin-top: -60px;
+
+    a {
+      text-decoration: none;
+      color: $color-gold;
+    }
+  }
 }
+
+.logo-title {
+  font-weight: $font-weight-black;
+  color: $color-light;
+  text-align: left;
+  margin-bottom: auto;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  padding-left: 9%;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.logo-subtitle {
+  margin-top: 0;
+  font-size: 10px;
+  font-weight: $font-weight-regular;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  padding-left: 9%;
+  display: inline;
+  color: $color-light;
+}
+
+.page-title {
+  color: $color-gold;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 200px;
+  text-align: center;
+  word-spacing: 7px;
+  letter-spacing: 5px;
+
+  .higher {
+    text-align: center;
+    margin-bottom: -10px;
+    font-size: 55px;
+    padding-right: 25%;
+    z-index: 1;
+  }
+
+  .lower {
+    text-align: center;
+    margin: 0;
+    font-size: 55px;
+  }
+
+  :after {
+    position: absolute;
+    content: "";
+    bottom: 58px;
+    left: 50%;
+    width: 200px;
+    height: 2px;
+    transform: translateX(-50%);
+    background: $color-gold;
+    margin-bottom: 25%;
+  }
+}
+
 .discover {
-	color: $color-light;
-	margin-bottom: 0;
-	padding-top: 25%;
-	vertical-align: text-bottom;
-	font-size: 25px;
-	$font-weight-regular: 400;
+  color: $color-light;
+  margin-bottom: 0;
+  padding-top: 25%;
+  vertical-align: text-bottom;
+  font-size: 25px;
+  $font-weight-regular: 400;
 }
 
 i {
-	color: $color-light;
-	font-size: 25px;
+  color: $color-light;
+  font-size: 25px;
 }
