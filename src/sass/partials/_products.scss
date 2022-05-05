@@ -1,73 +1,73 @@
 .product-wrapper {
-	margin: 5% auto;
-	width: 100%;
+  margin: 5% auto;
+  width: 100%;
 }
 
 .product-widget {
-	[class^="skill-"] {
-		position: relative;
-	}
+  [class^="skill-"] {
+    position: relative;
+  }
 }
 
 .product-widget:nth-child(even) {
-	.description {
-		padding: 20px 0 36px 45%;
-	}
+  .description {
+    padding: 20px 0 36px 45%;
+  }
 
-	.skill-right .product-image {
-		left: 0;
-		margin-left: 10%;
-	}
+  .skill-right .product-image {
+    left: 0;
+    margin-left: 10%;
+  }
 }
 
 .product-image {
-	position: absolute;
-	width: 50%;
-	height: 100%;
-	max-width: 100vh;
-	max-height: 100vh;
-	z-index: 1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  max-width: 100vh;
+  max-height: 100vh;
+  z-index: 1;
 }
 
 .product-image img {
-	width: 80%;
-	height: 100%;
+  width: 80%;
+  height: 100%;
 }
 
 .skill-right .product-image {
-	right: 0;
+  right: 0;
 }
 
 .skill-right .description {
-	text-align: left;
-	// margin: 36px 50% 36px 0;
-	padding: 36px 50% 36px 0;
-	margin-left: 10%;
-	margin-bottom: 5%;
+  text-align: left;
+  // margin: 36px 50% 36px 0;
+  padding: 36px 50% 36px 0;
+  margin-left: 10%;
+  margin-bottom: 5%;
 }
 
 .name {
-	font-weight: $font-weight-bold;
-	font-size: 40px;
-	letter-spacing: 3px;
-	// margin-bottom: 15px;
+  font-weight: $font-weight-bold;
+  font-size: 40px;
+  letter-spacing: 3px;
+  // margin-bottom: 15px;
 }
 
 .qualities {
-	text-transform: uppercase;
-	font-weight: $font-weight-bold;
-	font-size: 25px;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  font-size: 25px;
 
-	span {
-		color: $color-gold;
-		font-size: 22px;
-	}
+  span {
+    color: $color-gold;
+    font-size: 22px;
+  }
 }
 
 .icon {
-	margin-top: 10%;
+  margin-top: 10%;
 }
 
 .details {
-	font-size: large;
+  font-size: large;
 }

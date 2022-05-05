@@ -1,50 +1,50 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	background: $color-light;
-	font-family: $font-text;
-	font-size: 14px;
-	line-height: 1.7;
-	color: $color-dark;
-	box-sizing: border-box;
+  margin: 0;
+  background: $color-light;
+  font-family: $font-text;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $color-dark;
+  box-sizing: border-box;
 }
 
 .container {
-	max-width: 1500px;
-	margin: 0 auto;
-	padding: 0 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .section-title {
-	justify-content: center;
-	position: relative;
-	display: flex;
+  justify-content: center;
+  position: relative;
+  display: flex;
 
-	h2 {
-		font-size: 42px;
-		color: $color-gold;
-		letter-spacing: 5px;
-	}
+  h2 {
+    font-size: 42px;
+    color: $color-gold;
+    letter-spacing: 5px;
+  }
 }
 
 .section-title-line {
-	border-top: 4px solid $color-gold;
-	margin: 30px 0 0 0;
-	top: 60%;
-	position: absolute;
+  border-top: 4px solid $color-gold;
+  margin: 30px 0 0 0;
+  top: 60%;
+  position: absolute;
 }
 
 #pages {
-	> * {
-		display: none;
-	}
+  > * {
+    display: none;
+  }
 
-	> .active {
-		display: block;
-	}
+  > .active {
+    display: block;
+  }
 }

@@ -20,5 +20,16 @@ class Home {
     // console.log('homeContainer', menuContainer);
     menuContainer.appendChild(thisHome.element);
   }
+  /*initWidget() {
+		const thisHome = this;
+		// eslint-disable-next-line no-undef
+		thisHome.flickity = new Flickity(thisHome.dom.carousel, {
+			cellAlign: "left",
+			contain: true,
+			prevNextButtons: false,
+			wrapAround: true,
+			autoPlay: 3000,
+		});
+	}*/
 }
 export default Home;
