@@ -47,12 +47,11 @@
 		"postcss-cli": "^8.3.1",
 		"rimraf": "^3.0.2",
 		"stylelint": "^9.10.1",
-		"stylelint-scss": "^3.5.4"
+		"stylelint-scss": "^3.5.4",
+		"sass": "^1.35.1"
 	},
 	"dependencies": {
 		"flickity": "^3.0.0",
-		"http-server": "^14.1.0",
-		"json-server": "^0.16.3",
-		"sass": "^1.35.1"
+		"json-server": "^0.16.3"
 	}
 }
