@@ -1,5 +1,5 @@
 /* global require, process */
-import { create, router as _router, defaults } from "json-server";
+const { create, router: _router, defaults } = require("json-server");
 const server = create();
 const router = _router("dist/db/app.json");
 const middlewares = defaults({
